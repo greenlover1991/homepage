@@ -1,2 +1,63 @@
-<h1>Pages#registration</h1>
-<p>Find me in app/views/pages/registration.html.erb</p>
+<%= render 'registration_header' %>
+
+<hr />
+
+<table>
+	<tr>
+	  <td rowspan="9" width="500px" style="text-align:center;">
+	  	ADVERTISEMENT	
+	  </td>
+	  
+	  <td colspan="2">
+	  	<h2>Sign Up</h2>
+	  </td>
+	 
+	</tr>
+	
+	<tr>
+		<td>First Name:</td>
+		<td><input type="text" /></td>
+	</tr>
+	
+	<tr>
+		<td>Last Name:</td>
+		<td><input type="text" /></td>
+	</tr>
+	
+	<tr>
+		<td>Email Address:</td>
+		<td><input type="text" /></td>
+	</tr>
+	
+	<tr>
+		<td>Re-enter email address:</td>
+		<td><input type="text" /></td>
+	</tr>
+
+	<tr>
+		<td>Password:</td>
+		<td><input type="password" /></td>
+	</tr>
+	
+	<tr>
+		<td>Sex:</td>
+		<td>
+			  <select>
+					<option>Male</option>
+					<option>Female</option>
+		    </select>
+    </td>
+	</tr>
+	<tr>
+		<td>Birthday:</td>
+		<td>
+				<%= date_select :date, :date %>
+    </td>
+	</tr>
+	<tr>
+		<td>&nbsp</td>
+		<td>
+				<a href="index"><input type="submit" value="SIGN UP" /></a>
+    </td>
+	</tr>
+</table>
